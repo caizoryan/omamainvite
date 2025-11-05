@@ -131,3 +131,6 @@ requestAnimationFrame(step);
 document.querySelector('#close').onclick = () => {
 	document.querySelector(".invite").remove()
 }
+
+console.log("ITS NOT CLOCKING TO YOU IS IT?")
+console.log("THAT IM STANDING ON BIZZNESS")
