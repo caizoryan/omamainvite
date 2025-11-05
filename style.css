@@ -6,12 +6,12 @@
 *{font-family: "Arial Narrow", sans-serif;}
 
 body {
-	background: rgb(180,0 ,280);
+	background: #738C49;
 	overflow: hidden;
 }
 
 .main-container {
-	margin: auto;
+	/* margin: auto; */
 	/* position: fixed; */
 	/* width: 100vw; */
 	height: 100vh;
@@ -19,8 +19,8 @@ body {
 	/* left: 0; */
 	display: grid;
 	max-width: 800px;
-	grid-template-rows: 20% 20% 50%;
-	/* display: flex; */
+	grid-template-rows: 20% 10% 50%;
+    display: flex;
 	/* justify-content: center; */
 	/* align-items: center; */
 	grid-gap:1%;
@@ -28,7 +28,8 @@ body {
 
 .images {
 	overflow-y: scroll;
-	width: 100%;
+	width: 75%;
+    max-height: 50vh;
 	border: 1px solid black;
 	display: grid;
 	grid-template-columns: repeat( auto-fit, minmax(150px, 1fr) );
@@ -40,9 +41,10 @@ body {
 }
 
 img {
-	max-width: 95%;
-	max-height: 95%;
+	max-width: 103%;
+	max-height: 133%;
 	mix-blend-mode: multiply;
+	
 }
 
 .image-box[activated="false"] img{
@@ -50,9 +52,7 @@ img {
 }
 
 .image-box {
-	border: 1px solid black;
-	width: 120px;
-	height: 120px;
+	height: 114px;
 	padding: .5em;
 }
 
@@ -60,9 +60,9 @@ img {
 	position: fixed;
 	width: 250px;
 	height: 250px;
-	display: grid;
+		display: grid;
 	grid-gap: 2%;
-	font-size: 2em;
+	font-size: 1em;
 	grid-template-rows: 10% 70% 10%;
 	mix-blend-mode: multiply;
 	font-family: "Arial Narrow", sans-serif;
@@ -70,6 +70,7 @@ img {
 }
 
 .floating img{
+	padding: 0.1em;
 	max-height: 85%;
 	max-width: 85%;
 }
@@ -99,16 +100,23 @@ input {
 	font-size: 4em;
 	border: 1px solid black;
 	background: white;
-	padding: 1em;
+	padding: 0.1em;
 	user-select: none;
+	max-width: 30%;
+	max-height: 5vh;
 }
 
 button {
+	
+	margin: 0;
 	all: unset;
 	border: 1px solid black;
 	background: white;
 	padding: 1em;
 	user-select: none;
+	width: 100px;
+    height: 40px;
+	font-size: 25px;
 }
 
 button[activated='true']{
