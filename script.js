@@ -127,3 +127,7 @@ function step(timestamp) {
 }
 
 requestAnimationFrame(step);
+
+document.querySelector('#close').onclick = () => {
+	document.querySelector(".invite").remove()
+}
