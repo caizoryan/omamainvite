@@ -125,9 +125,7 @@ const elapsed = timestamp - start;
 	updatefns.forEach(fn => fn())
 	requestAnimationFrame(step);
 }
-
 requestAnimationFrame(step);
-
 document.querySelector('#close').onclick = () => {
 	document.querySelector(".invite").remove()
 }
