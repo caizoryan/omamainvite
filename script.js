@@ -118,10 +118,10 @@ let getlist = () => {
 }
 let start
 function step(timestamp) {
-  if (start === undefined) {
+if (start === undefined) {
     start = timestamp;
-  }
-  const elapsed = timestamp - start;
+}
+const elapsed = timestamp - start;
 	updatefns.forEach(fn => fn())
 	requestAnimationFrame(step);
 }
