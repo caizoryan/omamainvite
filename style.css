@@ -5,6 +5,7 @@
 
 *{font-family: "Arial Narrow", sans-serif;}
 
+
 body {
 	background: #738C49;
 	overflow: hidden;
@@ -37,6 +38,10 @@ img {
 	max-height: 133%;
 	mix-blend-mode: multiply;
 	
+}
+
+.dog {
+	mix-blend-mode: normal;
 }
 
 .image-box[activated="false"] img{
@@ -144,6 +149,7 @@ span.number {
 	padding-top: 15vh;
 	border: 1px solid black;
 	overflow-y: scroll;
+	color: #b3d56b;
 }
 
 .invite img {
